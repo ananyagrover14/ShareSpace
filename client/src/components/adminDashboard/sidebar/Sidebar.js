@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { logout } from "../../../redux/actions/authAction";
 import "./Sidebar.css";
@@ -8,11 +8,9 @@ import AdminManagement from "../adminManagement/AdminManagement";
 import Spam from "../spamManagement/Spam";
 import UsersManagement from "../usersManagement/UsersManagement";
 
-
 const Sidebar = () => {
   const dispatch = useDispatch();
-    const [adminMenu, setAdminMenu] = useState(1);
-
+  const [adminMenu, setAdminMenu] = useState(1);
 
   return (
     <>
@@ -24,7 +22,7 @@ const Sidebar = () => {
       <div className="sidebar_responsive" id="sidebar">
         <div className="sidebar__title">
           <div className="sidebar__img">
-            <h1>Campus Connect</h1>
+            <h1>ShareSpace</h1>
           </div>
           <i className="fa fa-times" id="sidebarIcon" aria-hidden="true"></i>
         </div>

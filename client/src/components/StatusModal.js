@@ -109,8 +109,6 @@ const StatusModal = () => {
     }
   }, [status]);
 
-  
-
   return (
     <div className="status_modal">
       <form onSubmit={handleSubmit}>
